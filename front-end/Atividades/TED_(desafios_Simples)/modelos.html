@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Modelos — Koenigsegg Wireframe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <!-- SVG reinterpretado inspirado no emblema -->
+                <svg viewBox="0 0 64 64" role="img" aria-label="Veltor" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="color:var(--accent)">
+                    <!-- escudo simplificado -->
+                    <path d="M8 10 C12 4, 52 4, 56 10 L56 36 C56 50, 36 58, 32 58 C28 58, 8 50, 8 36 Z"
+                        fill="currentColor" opacity="0.12" />
+                    <!-- V estilizado negativo space: usamos um path para o monograma -->
+                    <path d="M18 22 L32 44 L46 22 L40 22 L32 36 L24 22 Z" fill="currentColor"
+                        transform="translate(0,0) scale(0.95) translate(2,0)" />
+                    <!-- corte para criar negative space (simulate) -->
+                    <circle cx="48" cy="16" r="3" fill="currentColor" opacity="0.12" />
+                </svg>
+
+                <div>
+                    <div style="font-weight:800;letter-spacing:.06em;font-size:16px;color:var(--accent)">KOENIGSEGG
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="modelos.html">Modelos</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <h1 style="margin-top:26px">Modelos</h1>
+
+            <section class="grid" aria-live="polite">
+                <!-- Card 1 -->
+                <article class="card" role="article" aria-label="Model 1">
+                    <div>
+                        <div class="thumb"><img src="img/imagem_a_900.jpg"
+                                style="max-width: 130%; position:  relative; top: -40px;" alt="[Imagem - Model A]">
+                        </div>
+                        <h3 style="margin:12px 0 6px">Model A</h3>
+                        <div class="meta">Híbrido • 0-100 km/h: 2.8s • Potência: 1500 HP</div>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+                        <a class="btn" href="#">Ficha técnica</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" role="article" aria-label="Model 2">
+                    <div>
+                        <div class="thumb"><img src="img/imagem_b_900.jpg" alt="[Imagem - Model B]"></div>
+                        <h3 style="margin:12px 0 6px">Model B</h3>
+                        <div class="meta">Elétrico • 0-100 km/h: 2.5s • Potência: 1700 HP</div>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+                        <a class="btn" href="#">Ficha técnica</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" role="article" aria-label="Model 3">
+                    <div>
+                        <div class="thumb"><img src="img/imagem_c_900_1600.jpg" style="position:  relative; top: -18px;"
+                                alt="[Imagem - Model C]">
+                        </div>
+                        <h3 style="margin:12px 0 6px">Model C</h3>
+                        <div class="meta">Track Toy • 0-100 km/h: 2.1s • Potência: 1600 HP</div>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+                        <a class="btn" href="#">Ficha técnica</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
