@@ -12,6 +12,7 @@
             display: flex;
             justify-content: center;
         }
+
         form {
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
             padding: 20px 20px;
@@ -21,11 +22,13 @@
             flex-direction: column;
             justify-content: end;
         }
-        form div{
+
+        form div {
             margin-top: 30px;
             display: flex;
             flex-direction: column;
         }
+
         input {
             display: inline-block;
             margin: 10px 0px;
@@ -40,17 +43,20 @@
         label {
             font-size: 18px;
         }
-        #Mensagem{
+
+        #Mensagem {
             display: inline-block;
             max-width: 100%;
             height: 100px;
         }
-        #btn-enviar{
+
+        #btn-enviar {
             max-width: 100%;
             margin-left: auto;
             transition: all 0.5s;
         }
-        #btn-enviar:hover{
+
+        #btn-enviar:hover {
             background-color: white;
             color: black;
 
@@ -95,10 +101,10 @@
                 <form>
                     <h1 style="font-size: 30px; margin-bottom: 10px">Envie uma mensagem</h1>
                     <div>
-                        <label for="nome">
+                        <label for="Nome">
                             Nome:
                         </label>
-                        <input type="text" id="Nome" placeholder="Digite seu nome aqui..." />
+                        <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome aqui..." />
                         <label for="Email">
                             Email:
                         </label>
@@ -107,6 +113,22 @@
                             Mensagem:
                         </label>
                         <input type="text" id="Mensagem" placeholder="Digite sua mensagem aqui..." />
+                        <h2>Radio Button:</h2>
+                        <label for="modelos">Selecione o seu modelo preferido:</label>
+                        <div>
+                            <input type="radio" id="modelos1" name="modelo" value="KOENIGSEGG" /> <label
+                                for="modelos1">KOENIGSEGG</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" id="modelo2" name="modelo" value="KOENIGSEGG AGERA" /> <label
+                                for="modelos2">KOENIGSEGG AGERA</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="modelos3" name="modelo" value="KOENIGSEGG REGERA" /> <label
+                                for="modelos3">KOENIGSEGG REGERA</label>
+
+                        </div>
                     </div>
                     <button class="btn" id="btn-enviar">
                         Enviar
