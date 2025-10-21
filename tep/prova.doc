@@ -1,0 +1,279 @@
+📘 Tutorial de Organização de Repositório com Git — Atividade em Grupo
+🎯 Objetivo da Atividade
+Organizar e gerenciar um repositório GitHub para uma atividade em grupo, onde cada integrante contribui com seu conteúdo de forma estruturada e sem conflitos, utilizando boas práticas de versionamento com Git.
+
+👥 Estrutura de Participação
+👨‍🏫 Professor
+- Cria o repositório principal no GitHub.
+- Concede acesso de colaborador aos líderes de grupo.
+🧑‍💼 Líder do Grupo
+- Clona o repositório do professor.
+- Cria uma branch para cada integrante do grupo.
+- Gerencia os commits e merges.
+- Faz o merge das branches dos alunos para a main.
+- Garante que o repositório esteja organizado e atualizado.
+👨‍🎓 Integrantes do Grupo
+- Trabalham apenas na sua própria branch.
+- Editam o arquivo designado (ou sua seção dentro de um arquivo compartilhado).
+- Fazem commits e push apenas na sua branch.
+
+🗂️ Organização do Repositório
+📦 repositorio-projeto/
+├── aluno1/
+│   └── atividade.txt
+├── aluno2/
+│   └── atividade.txt
+├── aluno3/
+│   └── atividade.txt
+├── README.md
+└── main (branch principal)
+
+
+Alternativamente, se todos usarem o mesmo arquivo, ele pode ser estruturado com seções nomeadas para cada aluno.
+
+
+🔄 Fluxo de Trabalho com Git
+1. Clonar o repositório (feito pelo líder)
+git clone https://github.com/professor/repositorio.git
+cd repositorio
+
+
+
+2. Criar uma branch para cada aluno (feito pelo líder)
+git checkout -b aluno1
+git push origin aluno1
+
+git checkout main
+git checkout -b aluno2
+git push origin aluno2
+
+
+Repita para todos os integrantes.
+
+3. Aluno acessa sua branch
+git clone https://github.com/lider/repositorio.git
+cd repositorio
+git checkout aluno1  # substitua pelo nome da sua branch
+
+
+
+4. Aluno edita seu arquivo ou seção e envia
+git add atividade.txt
+git commit -m "Resolução da atividade do aluno 1"
+git push origin aluno1
+
+
+
+5. Líder revisa e faz merge na main
+git checkout main
+git pull origin main
+
+git merge aluno1
+git merge aluno2
+git merge aluno3
+git push origin main
+
+
+
+⚠️ Sobre Conflitos
+Se todos os alunos editarem o mesmo arquivo, pode haver conflitos durante o merge. Para evitar:
+- Divida o arquivo em seções nomeadas para cada aluno.
+- Oriente os alunos a editar apenas sua parte.
+- Faça git pull antes de cada merge.
+
+✅ Dicas Finais
+- Use git status com frequência.
+- Faça git pull antes de começar a trabalhar.
+- Use mensagens de commit claras.📘 Tutorial de Organização de Repositório com Git — Atividade em Grupo
+🎯 Objetivo da Atividade
+Organizar e gerenciar um repositório GitHub para uma atividade em grupo, onde cada integrante contribui com seu conteúdo de forma estruturada e sem conflitos, utilizando boas práticas de versionamento com Git.
+
+👥 Estrutura de Participação
+👨‍🏫 Professor
+- Cria o repositório principal no GitHub.
+- Concede acesso de colaborador aos líderes de grupo.
+🧑‍💼 Líder do Grupo
+- Clona o repositório do professor.
+- Cria uma branch para cada integrante do grupo.
+- Gerencia os commits e merges.
+- Faz o merge das branches dos alunos para a main.
+- Garante que o repositório esteja organizado e atualizado.
+👨‍🎓 Integrantes do Grupo
+- Trabalham apenas na sua própria branch.
+- Editam o arquivo designado (ou sua seção dentro de um arquivo compartilhado).
+- Fazem commits e push apenas na sua branch.
+
+🗂️ Organização do Repositório
+📦 repositorio-projeto/
+├── aluno1/
+│   └── atividade.txt
+├── aluno2/
+│   └── atividade.txt
+├── aluno3/
+│   └── atividade.txt
+├── README.md
+└── main (branch principal)
+
+
+Alternativamente, se todos usarem o mesmo arquivo, ele pode ser estruturado com seções nomeadas para cada aluno.
+
+
+🔄 Fluxo de Trabalho com Git
+1. Clonar o repositório (feito pelo líder)
+git clone https://github.com/professor/repositorio.git
+cd repositorio
+
+
+
+2. Criar uma branch para cada aluno (feito pelo líder)
+git checkout -b aluno1
+git push origin aluno1
+
+git checkout main
+git checkout -b aluno2
+git push origin aluno2
+
+
+Repita para todos os integrantes.
+
+3. Aluno acessa sua branch
+git clone https://github.com/lider/repositorio.git
+cd repositorio
+git checkout aluno1  # substitua pelo nome da sua branch
+
+
+
+4. Aluno edita seu arquivo ou seção e envia
+git add atividade.txt
+git commit -m "Resolução da atividade do aluno 1"
+git push origin aluno1
+
+
+
+5. Líder revisa e faz merge na main
+git checkout main
+git pull origin main
+
+git merge aluno1
+git merge aluno2
+git merge aluno3
+git push origin main
+
+
+
+⚠️ Sobre Conflitos
+Se todos os alunos editarem o mesmo arquivo, pode haver conflitos durante o merge. Para evitar:
+- Divida o arquivo em seções nomeadas para cada aluno.
+- Oriente os alunos a editar apenas sua parte.
+- Faça git pull antes de cada merge.
+
+✅ Dicas Finais
+- Use git status com frequência.
+- Faça git pull antes de começar a trabalhar.
+- Use mensagens de commit claras.
+- Evite git reset --hard sem necessidade.
+- Mantenha o repositório limpo e organizado.
+
+Elaborado por: Lucca
+Curso Sistemas para Internet — UNIESP
+Outubro de 2025
+📘 Tutorial de Organização de Repositório com Git — Atividade em Grupo
+🎯 Objetivo da Atividade
+Organizar e gerenciar um repositório GitHub para uma atividade em grupo, onde cada integrante contribui com seu conteúdo de forma estruturada e sem conflitos, utilizando boas práticas de versionamento com Git.
+
+👥 Estrutura de Participação
+👨‍🏫 Professor
+- Cria o repositório principal no GitHub.
+- Concede acesso de colaborador aos líderes de grupo.
+🧑‍💼 Líder do Grupo
+- Clona o repositório do professor.
+- Cria uma branch para cada integrante do grupo.
+- Gerencia os commits e merges.
+- Faz o merge das branches dos alunos para a main.
+- Garante que o repositório esteja organizado e atualizado.
+👨‍🎓 Integrantes do Grupo
+- Trabalham apenas na sua própria branch.
+- Editam o arquivo designado (ou sua seção dentro de um arquivo compartilhado).
+- Fazem commits e push apenas na sua branch.
+
+🗂️ Organização do Repositório
+📦 repositorio-projeto/
+├── aluno1/
+│   └── atividade.txt
+├── aluno2/
+│   └── atividade.txt
+├── aluno3/
+│   └── atividade.txt
+├── README.md
+└── main (branch principal)
+
+
+Alternativamente, se todos usarem o mesmo arquivo, ele pode ser estruturado com seções nomeadas para cada aluno.
+
+
+🔄 Fluxo de Trabalho com Git
+1. Clonar o repositório (feito pelo líder)
+git clone https://github.com/professor/repositorio.git
+cd repositorio
+
+
+
+2. Criar uma branch para cada aluno (feito pelo líder)
+git checkout -b aluno1
+git push origin aluno1
+
+git checkout main
+git checkout -b aluno2
+git push origin aluno2
+
+
+Repita para todos os integrantes.
+
+3. Aluno acessa sua branch
+git clone https://github.com/lider/repositorio.git
+cd repositorio
+git checkout aluno1  # substitua pelo nome da sua branch
+
+
+
+4. Aluno edita seu arquivo ou seção e envia
+git add atividade.txt
+git commit -m "Resolução da atividade do aluno 1"
+git push origin aluno1
+
+
+
+5. Líder revisa e faz merge na main
+git checkout main
+git pull origin main
+
+git merge aluno1
+git merge aluno2
+git merge aluno3
+git push origin main
+
+
+
+⚠️ Sobre Conflitos
+Se todos os alunos editarem o mesmo arquivo, pode haver conflitos durante o merge. Para evitar:
+- Divida o arquivo em seções nomeadas para cada aluno.
+- Oriente os alunos a editar apenas sua parte.
+- Faça git pull antes de cada merge.
+
+✅ Dicas Finais
+- Use git status com frequência.
+- Faça git pull antes de começar a trabalhar.
+- Use mensagens de commit claras.
+- Evite git reset --hard sem necessidade.
+- Mantenha o repositório limpo e organizado.
+
+Elaborado por: Lucca
+Curso Sistemas para Internet — UNIESP
+Outubro de 2025
+
+- Evite git reset --hard sem necessidade.
+- Mantenha o repositório limpo e organizado.
+
+Elaborado por: Lucca
+Curso Sistemas para Internet — UNIESP
+Outubro de 2025
